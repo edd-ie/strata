@@ -9,24 +9,204 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- ===== Stylesheet ===== -->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <!-- ========== ICONS ========== -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     </head>
     <body>
-        <!-- ======= NavBar ======= -->
-        <nav id="navbar">
-
-        </nav>
-
-        <!-- ====== Sidebar ====== -->
-        <aside id="sidebar">
-
-        </aside>
-
-        <!-- ========== Main sections =========== -->
-        <main id="main">
-
-        </main>
         
-        <script src="" async defer></script>
+        <div id="container">
+
+            <!-- ======= NavBar ======= -->
+            <div id="nav">
+                <div id="navbar">
+                    <img src="./images/logo.png" alt="Logo" id="logo">
+
+                    <form action="submit" id="searchbar">
+                        <input type="text" id="search" placeholder="search city" autocomplete="on">
+                        <button type="submit">
+                            <span class="material-symbols-sharp">search</span>
+                        </button>
+                    </form>
+
+                    <button id="locate">
+                        <span class="material-symbols-sharp">my_location</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ======== SITE ======= -->
+            <div id="site">
+                <!-- ====== Sidebar ====== -->
+                <aside id="sidebar"> 
+                    <!-- === Now === -->
+                    <div id="now">
+                        <div id="ntop">
+                            <h4>location</h4>                            
+                        </div>
+                        <div id="nmid">
+                            <h2>Temp</h2>  
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="current_Icon">                          
+                        </div>
+                        <div id="nbot">
+                            <h6>
+                                <span class="material-symbols-sharp">humidity_mid</span>
+                                humidity
+                            </h6>
+                            <h6>
+                                <span class="material-symbols-sharp">schedule</span>
+                                time
+                            </h6>                            
+                        </div>
+                    </div>
+
+                    <div id="week">
+                        <div id="1">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
+                        </div>
+                        <div id="2">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
+                        </div>
+                        <div id="3">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
+                        </div>
+                        <div id="4">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="" class="icon-day">
+                        </div>
+                        <div id="5">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
+                        </div>
+                        <div id="6" style="border-bottom: none">
+                            <p class="day">
+                                <span class="material-symbols-sharp">
+                                    today
+                                </span>
+                                Tue
+                            </p>
+                            <p class="temp-day">
+                                <span class="material-symbols-sharp">
+                                    device_thermostat
+                                </span>
+                                24
+                            </p>
+                            <p class="humid-day">
+                                <span class="material-symbols-sharp">
+                                    humidity_mid
+                                </span>
+                                1.2
+                            </p>
+                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!-- ========== Main sections =========== -->
+                <main id="main">
+                    <!-- ========  Detailed data about today  ========= -->
+                    <div id="detailed"></div>
+
+                    <!-- ============== Hourly weather ============== -->
+                    <div id="hours"></div>
+                </main>
+
+            </div>
+
+        </div>
+        
+        
+        <script src="./scripts/index.js" async defer></script>
     </body>
 </html>
