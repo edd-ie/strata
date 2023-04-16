@@ -150,8 +150,6 @@ function forcast(url) {
                 continue
             }
             storeW[elem++].textContent = unix2Day(day.date_epoch)
-            console.log("📚 ~ file: index.js:152 ~ .then ~ storeW[stamp++].textContent:", unix2Day(day.date_epoch));
-
             storeW[elem++].textContent = day.day.avgtemp_c + '°C'
             storeW[elem++].textContent = day.day.avghumidity + '%'
             storeW[elem++].src = day.day.condition.icon
@@ -163,21 +161,48 @@ function forcast(url) {
 }
 
 
-let locator = document.getElementById('locate')
+// let locator = document.getElementById('locate')
 
-locator.addEventListener('click', () =>{
-    const successCallback = (position) => {
-        console.log(position);
+// locator.addEventListener('click', () =>{
 
-    };
+//     function findNearestCity(latitude, longitude) {
+//             var geocoder = new google.maps.Geocoder();
+//             var latlng = new google.maps.LatLng(latitude, longitude);
 
-    const errorCallback = (error) => {
-    console.log(error);
-    };
+//             geocoder.geocode({'latLng': latlng}, function(results, status) {
+//                 if (status == google.maps.GeocoderStatus.OK) {
+//                 if (results[0]) {
+//                     for (var i = 0; i < results[0].address_components.length; i++) {
+//                     var addressType = results[0].address_components[i].types[0];
+//                     if (addressType === "locality") {
+//                         var cityName = results[0].address_components[i].long_name;
+//                         console.log("Nearest city: " + cityName);
+//                         break;
+//                     }
+//                     }
+//                 } else {
+//                     console.log("No results found");
+//                 }
+//                 } else {
+//                 console.log("Geocoder failed due to: " + status);
+//                 }
+//             });
+//     }
 
-    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+//     const successCallback = (position) => {
+//         console.log(position,position.coords.latitude);
+
+//         findNearestCity(position.coords.latitude, position.coords.longitude)
+
+//     };
+
+//     const errorCallback = (error) => {
+//     console.log(error);
+//     };
+
+//     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
     
 
-})
+// })
 

@@ -224,6 +224,13 @@ body{
     width: 10%;
 }
 
+#week div p.day{
+    margin-top: 8%;
+    font-size: 800;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 /* =========== Main ========== */
 main{
