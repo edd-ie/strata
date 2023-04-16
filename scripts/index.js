@@ -1,4 +1,4 @@
-let key = 'fa300f402d5b49d896870327231004'
+let key = '389ec37add1d48738ad183101231604'
 
 let form =  document.querySelector('#searchbar');
 
@@ -7,8 +7,8 @@ form.addEventListener('submit', function(e){
     let input = document.querySelector('#search');
     let value = input.value;
     
-    let current = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${value}&aqi=yes`;
-    let future = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=7&aqi=no&alerts=no`;
+    let current = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${value}&aqi=yes`;
+    let future = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=7&aqi=no&alerts=no`;
 
     currentWeather(current)
     forcast(future)
