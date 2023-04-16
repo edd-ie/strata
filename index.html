@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-        <!-- === Carousel === -->
+        
     </head>
     <body>
         
@@ -46,18 +46,18 @@
                     <!-- === Now === -->
                     <div id="now">
                         <div id="ntop">
-                            <h4>location</h4>                            
+                            <h4 id="loc">location</h4>                            
                         </div>
                         <div id="nmid">
-                            <h2>Temp</h2>  
-                            <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="current_Icon">                          
+                            <h2 id="nowT">Temp</h2>  
+                            <img id="nowImg" src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="current_Icon">                          
                         </div>
                         <div id="nbot">
-                            <h6>
+                            <h6 id="nowH">
                                 <span class="material-symbols-sharp">humidity_mid</span>
                                 humidity
                             </h6>
-                            <h6>
+                            <h6 id="nowTime">
                                 <span class="material-symbols-sharp">schedule</span>
                                 time
                             </h6>                            
@@ -65,7 +65,7 @@
                     </div>
 
                     <div id="week">
-                        <div id="1">
+                        <div class="week">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -86,7 +86,7 @@
                             </p>
                             <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
                         </div>
-                        <div id="2">
+                        <div class="week">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -107,7 +107,7 @@
                             </p>
                             <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
                         </div>
-                        <div id="3">
+                        <div class="week">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -128,7 +128,7 @@
                             </p>
                             <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
                         </div>
-                        <div id="4">
+                        <div class="week">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -149,7 +149,7 @@
                             </p>
                             <img src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="" class="icon-day">
                         </div>
-                        <div id="5">
+                        <div class="week">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -170,7 +170,7 @@
                             </p>
                             <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon-day">
                         </div>
-                        <div id="6" style="border-bottom: none">
+                        <div class="week" style="border-bottom: none">
                             <p class="day">
                                 <span class="material-symbols-sharp">
                                     today
@@ -204,9 +204,11 @@
                             <div id="dTemp" >
                                 <h1>
                                     Temperatures
-                                    <img src="https://img.icons8.com/ios-filled/30/null/thermometer.png" />
+                                    <span class="material-symbols-outlined">
+                                        thermostat
+                                    </span>
                                 </h1>
-                                <h3>Temp: <span id="nowT">20.1°C</span></h3>
+                                <h3>Temp: <span id="Temp">20.1°C</span></h3>
                                 <h3>max temp: <span id="maxT">21.1°C</span></h3>
                                 <h3>min temp: <span id="minT">15.1°C</span></h3>
                             </div>
@@ -250,8 +252,8 @@
                                     </span>
                                 </h1>
                                 <h3>CO2: <span id="co2">347.1</span></h3>
-                                <h3>Ozone: <span id="maxT">41.7</span></h3>
-                                <h3>NO2: <span id="minT">2.09</span></h3>
+                                <h3>Ozone: <span id="o3">41.7</span></h3>
+                                <h3>NO2: <span id="no2">2.09</span></h3>
                             </div>
                             <div id="pressure">
                                 <h1>Pressure 
@@ -357,84 +359,84 @@
 
                         <div id="night">
                             <div class="am" style="border-left: none">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
                                 </div>
                             </div>
                             <div class="am">
-                                <div class="pmHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
+                                <div class="amHr"style="display: flex; flex-direction: column; justify-content: space-around; padding-top: 13px; padding-left: 15px;">
                                     <p class="hr" style="margin: 0; margin-bottom: 5px;padding: 0;"><strong>12:00</strong></p>
                                     <img src="//cdn.weatherapi.com/weather/64x64/night/116.png" alt=""style="margin-bottom: 5px; margin-left: 5px; width:25px; height:25px;">
                                     <p class="hTemp" style="margin: 0;padding: 0;"><strong>21°C</strong></p>
