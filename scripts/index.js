@@ -7,8 +7,8 @@ form.addEventListener('submit', function(e){
     let input = document.querySelector('#search');
     let value = input.value;
     
-    let current = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${value}&aqi=yes`;
-    let future = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=7&aqi=no&alerts=no`;
+    let current = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${value}&aqi=yes`;
+    let future = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${value}&days=7&aqi=no&alerts=no`;
 
     currentWeather(current)
     forcast(future)
